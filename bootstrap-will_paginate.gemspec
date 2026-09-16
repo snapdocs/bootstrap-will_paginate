@@ -11,11 +11,11 @@ Gem::Specification.new do |s|
   s.summary     = %q{Format will_paginate html to match Twitter Bootstrap styling.}
   s.description = %q{Hooks into will_paginate to format the html to match Twitter Bootstrap styling.  Extension code was originally written by Isaac Bowen (https://gist.github.com/1182136).}
 
-  s.rubyforge_project = "bootstrap-will_paginate"
-
   s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
+
+  s.required_ruby_version = ">= 3.2"
+
   s.add_runtime_dependency "will_paginate"
 end
